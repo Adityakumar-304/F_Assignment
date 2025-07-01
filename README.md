@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+RealTrust 🌐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
+This project was developed as part of a company assignment.
 
-## Available Scripts
+🛠️ Tech Stack Used
+💻 Frontend:
+React.js
 
-In the project directory, you can run:
+HTML5
 
-### `npm start`
+CSS3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript (ES6+)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🌐 Backend:
+Node.js
 
-### `npm test`
+Express.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🗃️ Database:
+MongoDB (NoSQL)
+(Mongoose ODM for schema modeling)
 
-### `npm run build`
+🚀 Features
+User Authentication (Login / Register)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+RESTful API Integration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MongoDB Database Connectivity
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Responsive and User-Friendly UI
 
-### `npm run eject`
+CRUD Operations (Create, Read, Update, Delete)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Secure Password Storage using bcrypt
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Token-based Authentication using JWT (JSON Web Tokens)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Error Handling and Validation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📂 Project Structure (MERN Directory Layout)
+bash
+Copy
+Edit
+RealTrust/
+├── client/                # React Frontend
+├── server/                # Node + Express Backend
+├── .env                   # Environment Variables
+├── package.json           # Node package file
+└── README.md              # Project Readme
+⚙️ How to Run Locally?
+✅ Prerequisites:
+Node.js installed 
 
-## Learn More
+MongoDB installed or Atlas Cluster 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the Repository:
+bash
+Copy
+Edit
+git clone https://github.com/YourUsername/RealTrust.git
+cd RealTrust
+2. Backend Setup (Node.js + Express):
+bash
+Copy
+Edit
+cd server
+npm install
+Create a .env file inside /server with the following variables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ini
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+Start backend server:
 
-### Code Splitting
+bash
+Copy
+Edit
+npm start
+3. Frontend Setup (React):
+bash
+Copy
+Edit
+cd client
+npm install
+Start React Frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+bash
+Copy
+Edit
+npm start
+✅ Your App will be running at:
+Frontend: http://localhost:3000
 
-### Analyzing the Bundle Size
+Backend API: http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+✅ Deployment (Optional):
+For deployment, you can use:
 
-### Making a Progressive Web App
+Frontend: Netlify / Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend + DB: Render / Railway / MongoDB Atlas / Heroku (legacy)
 
-### Advanced Configuration
+Learnings & Outcome:
+Full understanding of MERN architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Real-time development workflow with Node.js server and React client
 
-### Deployment
+Working with REST APIs, MongoDB CRUD, Token-based Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Following best practices for backend security, error handling, and frontend UI/UX
