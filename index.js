@@ -1,26 +1,17 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import reportWebVitals from './reportWebVitals';
 
-const app = express();
-const PORT = process.env.PORT || 5000;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-// Middlewares
-app.use(cors());
-app.use(express.json());
-
-// Routes
-app.use("/api/projects", require("./routes/projectRoutes"));
-app.use("/api/clients", require("./routes/clientRoutes"));
-app.use("/api/contacts", require("./routes/contactRoutes"));
-app.use("/api/newsletter", require("./routes/newsletterRoutes"));
-
-// MongoDB Connection
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => {
-    app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`);
-    });
-  })
-  .catch(err => console.error("MongoDB connection error:", err));
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
